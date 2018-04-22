@@ -105,6 +105,7 @@
 48b690	DrawCall
 48b950	CallRender
 48ba30	RegisterUpdateFunction
+48cc30	zrwPrim.c:PrimSystemInitialize
 48f720	RwObjectCallBack_1
 48ffc0	zobjLight.c:ZObjLightInitialize
 490230	zScene.c:ProcessSceneTokens
@@ -129,6 +130,9 @@
 497a90	rwMatConstructor
 497ab0	rwMatDestructor
 4981a0	RwTextureCallBackRead_1
+4981f0	ReadTBMP
+4982a0	ReadTPNG
+498320	ReadTDDS
 4985c0	Stranno
 498660	zrwTxr.c:TextureSystemInitialize
 498b10	rwMatRegisterPlugin
@@ -404,7 +408,7 @@
 4db9a0	calloc
 4db9e0	_rwMemoryOpen
 4dba70	_rwMemoryClose
-4dba80	RwEngineInstanceAdd128
+4dba80	RwOsGetMemoryInterface
 4dba90	RwFreeListCreate
 4dbbc0	RwFreeListDestroy
 4dbbc2	*freeList
@@ -480,6 +484,8 @@
 4df550	RwTextureSetFindCallBack 
 4df570	RwTextureGetFindCallBack
 4df580	RwTextureSetMipmapping
+4df5f0	RwTextureSetRaster
+4df670	RwTexDictionaryCreate
 4df910	RwTextureCreate
 4dfcb0	RwTextureRead
 4dffd0	RwTextureRegisterPlugin
@@ -735,6 +741,7 @@
 674019	isInitializeZrwCamera
 67404c	ppDInput
 6741e4	isWorldOpen
+67429c	TextureDictonary
 6746d0	isZiffInitilaized
 6752c0	RwFileFunctions
 6752e8	IsInitializedZrwFileDisk
