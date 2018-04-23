@@ -139,6 +139,7 @@
 499330	zanim.c:AnimationSystemInitialize
 499a10	AnimationFunction
 49a6d0	ziff.c:ZIffInitialize
+49aad0	ZiffSetupCallBack?
 49e1f0	zrwFile.c:get_rw00_device
 49e220	zrwFile.c:NotDefined_2
 49e2b0	zrwFile.c:NotDefined_3
@@ -487,6 +488,8 @@
 4df5f0	RwTextureSetRaster
 4df670	RwTexDictionaryCreate
 4df910	RwTextureCreate
+4dfc80	RwTexDictionarySetCurrent
+4dfca0	RwTexDictionaryGetCurrent
 4dfcb0	RwTextureRead
 4dffd0	RwTextureRegisterPlugin
 4e0020	RwTextureGetPluginOffset
@@ -742,6 +745,7 @@
 67404c	ppDInput
 6741e4	isWorldOpen
 67429c	TextureDictonary
+6742a0	OldTextureReadCallBack
 6746d0	isZiffInitilaized
 6752c0	RwFileFunctions
 6752e8	IsInitializedZrwFileDisk
