@@ -81,7 +81,7 @@
 488f40	zobjModel.c:ObjModelInitialize
 4893b0	zrwMat.c:NotDefined_1
 489440	zrwMat.c:MaterialSystemInitialize
-4896d0	LoadSprite(Texture)
+4896d0	LoadSpriteTexture
 489be0	zrwMat.c:EndFunction
 489cb0	timeGetTime
 489cc0	ApplicationError
@@ -784,6 +784,15 @@
 6767a0	lightModule
 6767b4	binWorldModule
 676820	staticGlobals
+6768e0	fileFuncs.rwfexist
+6768e4	fileFuncs.rwfopen
+6768e8	fileFuncs.rwfclose
+6768ec	fileFuncs.rwfread
+6768f0	fileFuncs.rwfwrite
+6768f4	fileFuncs.rwfgets
+6768f8	fileFuncs.rwfputs
+6768fc	fileFuncs.rwfeof
+676900	fileFuncs.rwfseek
 676908	stringFuncs.vecSprintf
 67690c	stringFuncs.vecVsprintf
 676910	stringFuncs.vecStrcpy
@@ -799,6 +808,10 @@
 67693c	stringFuncs.vecStrlwr
 676940	stringFuncs.vecStrtok
 676944	stringFuncs.vecSscanf
+676948	memoryFuncs.rwmalloc
+67694c	memoryFuncs.rwfree
+676950	memoryFuncs.rwrealloc
+676954	memoryFuncs.rwcalloc
 676968	engineInstancesOpened
 67696c	RwEngineInstance
 676970	matrixModule.globalsOffset
