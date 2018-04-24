@@ -42,6 +42,7 @@
 47f660	DebugUpdateFunction
 480240	DebugString
 4802f0	zinput.c:ZInputCreate
+480340	zinput.c:ZInputDestroy
 4804d0	OPEN_LIBRARY
 4806c0	CLOSE_LIBRARY
 480850	zassets.c:NotDefined_1
@@ -54,7 +55,7 @@
 4827d0	zStrLen
 482840	FormatString
 4828a0	zstrncmp
-482b90	MemSetMaybe
+482b90	memset
 483420	zquat.c:NotDefined_4
 483470	zquat.c:NotDefined_3
 483670	zquat.c:NotDefined_2
@@ -118,6 +119,7 @@
 492340	zrwCam.c:ZRWCameraInitialize
 492fe0	DrawFunc?
 493160	DirectInputInitialize
+493220	EnumJoysticksCallback
 493310	DirectInputSetup
 493760	SetDataFormat_and_SetCooperativeLevel
 493830	OnActivate
@@ -362,6 +364,7 @@
 4d1400	RwMatrixScale
 4d15a0	RwMatrixTranslate
 4d16f0	RwMatrixTransform
+4d1fe0	RwMatrixCreate
 4d2040	_rwMatrixClose
 4d2080	_rwMatrixOpen
 4d2280	_rwFrameOpen
@@ -686,6 +689,7 @@
 54e274	PROGINTRO
 54e280	BOXINTRO
 54e634	_RT_FLOAT_TXT
+54f448	IID_IDirectInput7
 54ff68	IID_IDirect3DRefDevice
 54ff78	IID_IDirect3DMMXDevice
 54ff88	IID_IDirect3DHALDevice
@@ -716,6 +720,7 @@
 5667e0	geometryTKList
 566880	lightTKList
 566dc0	engineTKList
+566dd4	_rwMsbBit
 566f30	rasterTKList
 566f50	cameraTKList
 566f98	textureTKList
@@ -732,6 +737,8 @@
 670638	RAMDiskFunctionTable
 670674	isInitializedFileSystem
 670880	isInitializedZmem
+6722ec	RwMatrix_1
+6722f0	RwMatrix_2
 6724d0	GsubSysInfo
 672750	GnumSubSystems
 672754	GcurSel
@@ -742,6 +749,8 @@
 673f70	isInitializedZScene
 674018	isInitializeZrsCamera
 674019	isInitializeZrwCamera
+674038	g_pDI
+67403c	g_guidJoystick
 67404c	ppDInput
 6741e4	isWorldOpen
 67429c	TextureDictonary
