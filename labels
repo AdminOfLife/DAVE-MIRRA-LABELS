@@ -212,7 +212,9 @@
 4a6f61	__sbh_alloc_block
 4a726a	__sbh_alloc_new_region
 4a731b	__sbh_alloc_new_group
+4a8370	fflush
 4a83ab	_flush
+4a847d	fprintf
 4a874d	raise
 4a88bf	__crtMessageBoxA
 4a8af0	strncat
@@ -793,6 +795,7 @@
 6768f8	fileFuncs.rwfputs
 6768fc	fileFuncs.rwfeof
 676900	fileFuncs.rwfseek
+676904	fileFuncs.fflush
 676908	stringFuncs.vecSprintf
 67690c	stringFuncs.vecVsprintf
 676910	stringFuncs.vecStrcpy
@@ -812,12 +815,14 @@
 67694c	memoryFuncs.rwfree
 676950	memoryFuncs.rwrealloc
 676954	memoryFuncs.rwcalloc
+676958	memoryAlloc
+67695c	memoryFree
+676964	engineStatus
 676968	engineInstancesOpened
 67696c	RwEngineInstance
 676970	matrixModule.globalsOffset
 676980	frameModule.globalsOffset
 676990	vectorModule.globalsOffset
-676ab0	engineStatus
 676cf0	resourcesModule
 676d00	rasterModule
 676d10	cameraModule
