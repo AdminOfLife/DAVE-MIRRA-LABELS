@@ -117,7 +117,7 @@
 491c50	zScene.c:EndFunction
 4922c0	WorkinWithCamera
 492340	zrwCam.c:ZRWCameraInitialize
-492fe0	DrawFunc?
+492fe0	EndOfUpdateCamera
 493160	DirectInputInitialize
 493220	EnumJoysticksCallback
 493310	DirectInputSetup
@@ -131,6 +131,7 @@
 497a80	DDSImageRead
 497a90	rwMatConstructor
 497ab0	rwMatDestructor
+497b00	LoadTexture
 4981a0	RwTextureCallBackRead_1
 4981f0	ReadTBMP
 4982a0	ReadTPNG
@@ -142,6 +143,7 @@
 499a10	AnimationFunction
 49a6d0	ziff.c:ZIffInitialize
 49aad0	ZiffSetupCallBack?
+49ac30	ZIFFRead
 49e1f0	zrwFile.c:get_rw00_device
 49e220	zrwFile.c:NotDefined_2
 49e2b0	zrwFile.c:NotDefined_3
@@ -582,17 +584,25 @@
 4eb2a0	_rwColorOpen
 4eb2b0	_rwColorClose
 4eb300	ReleaseAllDirectXObjects?
-4ebe50	This is call DirectDrawCreate
+4ebe50	DDEnumCallback
 4ebfc0	D3D3NullStandard
 4ec100	PrepareGame
 4ec2d0	RwD3DTexturesWork
-4eca10	CopyDisplayInfo?
-4eca60	GetDisplayInfo
+4eca10	D3D3DeviceSystemUseMode
+4eca50	D3D3CreateDisplayModesList
+4eca60	D3D3DeviceGetVideoModeInfo
 4ecbf0	_rwDeviceGetHandle
+4ecce0	D3D3DeviceSystemOpen
+4ecd60	D3D9DeviceSystemClose
+4ecdb0	D3D3DeviceGetNumSubsystems
+4ecdc0	D3D3DeviceGetSubsystemInfo
+4ece30	D3D3DeviceGetCurrentSubsystem
+4ece40	D3D3DeviceSetSubsystem
 4eceb0	D3D3DeviceSystemStart
 4ede90	D3D3DeviceSystemStandards
 4ee010	D3D3System
 4ee13a	EndOfFunc
+4ee170	D3D3DeviceSystemStop
 4ee1d0	stricmp
 4ee230	strupr
 4ee260	strlwr
@@ -727,6 +737,7 @@
 566f98	textureTKList
 566fac	texDictTKList
 566fc0	imageTKList
+566fe0	_RwD3D3CurrentModeIndex
 566fe4	rwD3D3DriverDevice
 56701c	rwD3D3Standards
 56bfac	TimerString
@@ -759,6 +770,7 @@
 6746d0	isZiffInitilaized
 6752c0	RwFileFunctions
 6752e8	IsInitializedZrwFileDisk
+6752ec	RamDiskFileName
 675370	isInitializedZrwLight
 675378	Zge\zge.c:isInitializedZge
 6763e8	isManyRAMDiskFiles
@@ -823,6 +835,7 @@
 676970	matrixModule.globalsOffset
 676980	frameModule.globalsOffset
 676990	vectorModule.globalsOffset
+676cdc	deviceOut
 676cf0	resourcesModule
 676d00	rasterModule
 676d10	cameraModule
@@ -836,6 +849,9 @@
 676da4	colorModule
 676db0	isSetDisplayMode
 676db8	hWnd
+676dc4	DisplayModes
+676dc8	NumDisplayModes
+677d94	_RwD3DAdapterIndex
 6966e8	meshModule.globalsOffset
 6968f0	lpDD
 697080	lpDDSCaps 
@@ -847,6 +863,7 @@
 69732c	lplpD3DViewport
 697330	lplpDirect3DMaterial
 69734c	dgGGlobals.memFuncs
+697350	CurrentDisplayMode
 697360	lpD3D3
 697364	RwD3D3RasterExtOffset
 697368	RwD3D3CameraExtOffset
@@ -863,5 +880,7 @@
 697774	CameraHeight
 697780	mainHWND
 697784	hInstance
+697798	CurrentWindowWidth
+69779c	CurrentWindowHeight
 697bdc	_nhandle
 698f54	_crtheap
