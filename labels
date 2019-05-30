@@ -40,6 +40,7 @@
 47ec80	zDebugDestroy
 47ed10	EpicFail
 47f660	DebugUpdateFunction
+47f940	ZDebugPrintBlya
 480240	DebugString
 4802f0	zinput.c:ZInputCreate
 480340	zinput.c:ZInputDestroy
@@ -95,6 +96,7 @@
 48a330	DialogProc
 48a460	WinMain
 48a6a0	MainStartup
+48a7b2	FramesPerSecond
 48a800	MainWndProc
 48a940	FileSystemsInitialize
 48a9a0	ZeroingEAX
@@ -507,6 +509,7 @@
 4e00d0	RwTextureSetMipmapGenerationCallBack
 4e00f0	RwTextureGetMipmapGenerationCallBack
 4e1140	DeadCode_1
+4e1b50	NeededFindFunc
 4e2350	_rwStreamModuleOpen
 4e23b0	_rwStreamModuleClose
 4e23e0	RwStreamOpen
@@ -543,10 +546,11 @@
 4e44e0	RwImageGetPath
 4e44f0	ImagePathForAllFullNames
 4e47e0	ImageAttempRead
-4e4820	RwImageRead
+4e4820	RwImageRead__
 4e4a00	RwImageFindFileType
 4e4a30	RwImageRegisterImageFormat
 4e4bb0	RwImageWrite
+4e4c50	RwImageRead
 4e5570	RwImageSetGamma
 4e5730	RwImageRegisterPlugin
 4e5780	RwImageGetPluginOffset
@@ -609,6 +613,7 @@
 4ee290	strchr
 4ee2d0	strrchr
 4ee300	_rwStringOpen
+4ee3b9	strupr
 4ee400	_rwStringClose
 4f2ec0	_rwpathisabsolute
 4f2ef0	_rwgetcurrenttime
@@ -742,6 +747,7 @@
 56701c	rwD3D3Standards
 56bfac	TimerString
 650170	isInitZDebug
+650488	RwCharset
 670568	DefaultFileSystemDevice
 6705ac	ResourcePath
 670630	FileSystemsDescriptor
